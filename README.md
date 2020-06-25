@@ -25,7 +25,7 @@ $ oc apply -f app-deploy-ocpv4.yaml
 $ oc apply -f app-svc-ocpv4.yaml  
 $ oc expose service/sample-app  
   
-2. カスタムPrometheusの準備とサービスモニター定義  
+2.　カスタムPrometheusの準備とサービスモニター定義  
 -----------  
 Prometheus Operatorを準備  
 $ oc project default  
@@ -34,7 +34,7 @@ $ oc apply -f create-prometheus.yaml
 $ oc apply -f create-service-monitor.yaml  
 $ oc expose service/prometheus-operated  
   
-3. Prometheusアダプター作成
+3.　Prometheusアダプター作成
 -----------  
 $ oc apply -f create-role-sa.yaml  
 $ oc apply -f create-custom-metrics.yaml  
@@ -42,12 +42,12 @@ $ oc apply -f create-api-service.yaml
 $ oc apply -f create-prometheus-adapter.yaml  
 $ oc get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/hpatest/pods/*/nginx_http_requests_per_second" | jq .  
   
-4. カスタムメトリクスHPA定義  
+4.　カスタムメトリクスHPA定義  
 -----------  
 $ oc project hpatest  
 $ oc apply -f custom_metrics_hpa.yaml  
   
-5. HPA動作確認
+5.　HPA動作確認
 -----------  
 nginxへ負荷をかける。  
 ### HPAでReplicas増加を確認  
