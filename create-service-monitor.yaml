@@ -1,0 +1,24 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  creationTimestamp: '2020-06-23T09:29:35Z'
+  generation: 1
+  labels:
+    app: sample-app
+  name: sample-app
+  namespace: default
+  resourceVersion: '594949'
+  selfLink: >-
+    /apis/monitoring.coreos.com/v1/namespaces/default/servicemonitors/sample-app2
+  uid: dabaf2d2-0d9b-425c-8fe9-c92e8d91c01c
+spec:
+  endpoints:
+    - interval: 30s
+      port: exporter
+  namespaceSelector:
+    matchNames:
+      - hpatest
+  selector:
+    matchLabels:
+      app: sample-app
+
