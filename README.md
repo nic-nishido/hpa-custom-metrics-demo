@@ -28,7 +28,7 @@ $ oc expose service/sample-app
   
 2.　カスタムPrometheusの準備とサービスモニター定義  
 -----------  
-Prometheus Operatorを準備  
+Prometheusをdefaultプロジェクトへデプロイした後に以下を実施。
 $ oc project default  
 $ oc policy add-role-to-user edit system:serviceaccount:default:prometheus-k8s -n hpatest  
 $ oc apply -f create-prometheus.yaml  
