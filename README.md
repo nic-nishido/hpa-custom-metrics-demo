@@ -1,10 +1,10 @@
 # hpa-custom-metrics-demo
 
-本デモでは、OpenShift Container Platform v4にて、Prometheusのメトリクスを基にHorizontal Pod Autoscaler(HPA)の  
-動作を確認するための環境の準備と実際にオートスケールの挙動を確認することが出来ます。  
+本デモでは、OpenShift Container Platform v4にて、Prometheusのメトリクスを基にHorizontal Pod Autoscaler(HPA)  
+の動作を確認するための環境の準備と実際にオートスケールの挙動を確認することが出来ます。  
   
-Prometheusへメトリクスを送信するexporterを備えたnginxのイメージを使用して、nginx_http_requests_per_secondの値を  
-HPAの判定基準としてオートスケールが実行されることを確認するデモです。  
+Prometheusへメトリクスを送信するexporterを備えたnginxのイメージを使用して、  
+nginx_http_requests_per_secondの値を  HPAの判定基準としてオートスケールが実行されることを確認するデモです。  
   
 以下のOpenShift V3.11で実施されていたものをV4で動作するように改良したものとなります。  
 https://medium.com/ibm-cloud/autoscaling-applications-on-openshift-container-platform-3-11-with-custom-metrics-6e9c14474de3
