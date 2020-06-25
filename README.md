@@ -13,11 +13,11 @@ https://medium.com/ibm-cloud/autoscaling-applications-on-openshift-container-pla
 https://access.redhat.com/documentation/ja-jp/openshift_container_platform/4.4/html-single/monitoring/index#exposing-custom-application-metrics-for-autoscaling
 
   
-■前提条件  
+■ 前提条件  
 ・OCPのクラスターが用意出来ていること。  
 ・クラスター管理者権限でアクセス出来ること。  
   
-環境準備
+■ 環境準備
 1.　hpatestというプロジェクトを作成し、exporterを備えたnginxをデプロイ  
 -----------  
 $ oc new-project hpatest  
