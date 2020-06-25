@@ -17,7 +17,7 @@ https://access.redhat.com/documentation/ja-jp/openshift_container_platform/4.4/h
 ・OCPのクラスターが用意出来ていること。  
 ・クラスター管理者権限でアクセス出来ること。  
   
-■環境準備  
+環境準備
 1.　hpatestというプロジェクトを作成し、exporterを備えたnginxをデプロイ  
 -----------  
 $ oc new-project hpatest  
